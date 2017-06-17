@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import Balance from './Balance'
 
 const commandStyle = {
-  backgroundColor: '#29353d',
+  backgroundColor: '#b0b4b7',
   height: '100% ',
   paddingLeft: 25,
   paddingRight: 20

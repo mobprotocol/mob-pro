@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Row } from 'react-bootstrap'
 
 const balanceStyle = {
-  height: 400,
+  height: 300,
   color: '#FFF'
 }
 export default class Balance extends Component {
