@@ -1,12 +1,11 @@
 import React, { Component } from 'react'
 
 import Balance from './Balance'
+import Trade from './Trade'
 
 const commandStyle = {
-  backgroundColor: '#b0b4b7',
   height: '100% ',
-  paddingLeft: 25,
-  paddingRight: 20
+  width: '100%',
 }
 
 export default class Commands extends Component {
@@ -14,6 +13,7 @@ export default class Commands extends Component {
     return (
       <div style={commandStyle}>
         <Balance />
+        <Trade />
       </div>
     )
   }

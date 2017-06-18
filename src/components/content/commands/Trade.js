@@ -1,0 +1,17 @@
+import React, { Component } from 'react'
+import { Row } from 'react-bootstrap'
+
+const tradeStyle = {
+  height: '50%',
+  backgroundColor: '#9ca1a6'
+}
+export default class Trade extends Component {
+  render() {
+    return (
+      <Row style={tradeStyle}>
+        <div></div>
+        <div></div>
+      </Row>
+    )
+  }
+}
