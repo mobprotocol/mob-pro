@@ -1,5 +1,8 @@
+import 'react-rangeslider/lib/index.css'
+
 import React, { Component } from 'react'
 import { Row } from 'react-bootstrap'
+import Slider from 'react-rangeslider'
 
 const tradeStyle = {
   height: '50%',
@@ -15,6 +18,11 @@ export default class Trade extends Component {
       receiveAmount: '45'
     }
   }
+
+  handleSliderChange(e) {
+    console.log('slider changing')
+  }
+
   render() {
     return (
       <Row style={tradeStyle}>
@@ -34,7 +42,13 @@ export default class Trade extends Component {
           </div>
         </div>
         <div style={{ height: '25%' }}>
-
+          <div style={{ paddingLeft: 20, paddingRight: 10 }}>
+            <Slider
+              value={this.state.quantity}
+              oriantation="horizontal"
+              onChange={this.handleSliderChange}
+            />
+          </div>
         </div>
         <div style={{ height: '25%' }}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
