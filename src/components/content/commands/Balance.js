@@ -21,15 +21,15 @@ export default class Balance extends Component {
     return (
       <Row style={balanceStyle}>
         <div style={{ height: '25%'}}>
-          <div style={{ width: '50%', display: 'inline', float: 'left'}}>
-            <h3 sty={{ textAlign: 'center'}}>{this.state.tokenA}</h3>
+          <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
+            <h3>{this.state.tokenA}</h3>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left'}}>
             <h3>{this.state.tokenAamount}</h3>
           </div>
         </div>
         <div style={{ height: '25%'}}>
-          <div style={{ width: '50%', display: 'inline', float: 'left' }} >
+          <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }} >
             <h3>{this.state.tokenB}</h3>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left' }}>
@@ -39,7 +39,7 @@ export default class Balance extends Component {
         <div style={{ height: '25%', textAlign: 'center' }}>
           <h3>Deposit</h3>
         </div>
-        <div style={{ height: '25%' }}>
+        <div style={{ height: '25%', textAlign: 'center' }}>
           <h3>Withdraw</h3>
         </div>
       </Row>
