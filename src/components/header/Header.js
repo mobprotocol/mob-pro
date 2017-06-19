@@ -25,7 +25,7 @@ export default class Header extends Component {
         <Col sm={3} style={{ height: '100%'}}>
           <TokenB />
         </Col>
-        <Col sm={3} sytle={{ height: '100%'}}>
+        <Col sm={3} style={{ height: '100%'}}>
           <Notifications />
         </Col>
       </Row>
