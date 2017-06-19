@@ -3,6 +3,7 @@ import { Row, Col } from 'react-bootstrap'
 
 import TokenA from './TokenA'
 import TokenB from './TokenB'
+import Notifications from './Notifications'
 
 const headerStyle = {
   height: 90,
@@ -23,6 +24,9 @@ export default class Header extends Component {
         </Col>
         <Col sm={3} style={{ height: '100%'}}>
           <TokenB />
+        </Col>
+        <Col sm={3} sytle={{ height: '100%'}}>
+          <Notifications />
         </Col>
       </Row>
     )
