@@ -5,22 +5,25 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip
+  Tooltip,
+  ResponsiveContainer,
 } from 'recharts'
 
-import data from './PriceHistoryData'
+import { data } from './PriceHistoryData'
 
 export default class PriceHistory extends Component {
   render() {
     return (
-      <LineChart width={'100%'} height={'50%'} data={data}>
-          <XAxis dataKey="name" />
-          <YAxis />
-          <CartesianGrid strokeDasharray="3 3"
-          <Tooltip />
-          <Line type="monotone" dataKey="pv" stroke="#8884d8" />
-          <Line type="monotone" dataKey="uv" strple="#82ca9d" />
-      </LineChart>
+      <ResponsiveContainer width='100%' height='55%'>
+        <LineChart data={data}>
+            <XAxis dataKey="name" />
+            <YAxis />
+            <CartesianGrid />
+            <Tooltip />
+            <Line type="monotone" dataKey="pv" stroke="#d6cac2" activeDot={{r: 8}}/>
+            <Line type="monotone" dataKey="uv" stroke="#d6cac2" />
+        </LineChart>
+      </ResponsiveContainer>
     )
   }
 }

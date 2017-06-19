@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-bootstrap'
 
-import Commands from './Commands'
+import Commands from './commands/Commands'
 import OrderBook from './orderbook/Orderbook'
+import Market from './market/Market'
 
 const contentStyle = {
   height: '100%',
@@ -20,12 +21,14 @@ export default class Content extends Component {
   render() {
     return (
       <Row style={contentStyle}>
-        <Col sm={3} style={{backgroundColor: '#e8e9ed', height: '100'}}>
+        <Col sm={3} style={{ height: '100%'}}>
+          <Commands />
         </Col>
         <Col sm={3} style={{ backgroundColor: '#29353d'}}>
           <OrderBook />
         </Col>
         <Col sm={6} style={{ backgroundColor: '#3a444d', height: '100%'}}>
+          <Market />
         </Col>
       </Row>
     )

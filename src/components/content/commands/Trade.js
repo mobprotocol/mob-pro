@@ -9,7 +9,7 @@ export default class Trade extends Component {
   render() {
     return (
       <Row style={tradeStyle}>
-        <div></div>
+        <div style={{ height: '40'}}></div>
         <div></div>
       </Row>
     )

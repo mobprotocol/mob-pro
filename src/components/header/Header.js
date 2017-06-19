@@ -15,9 +15,9 @@ export default class Header extends Component {
             MOB PRO
           </h3>
         </Col>
-        <Col sm={3} style={{ backgroundColor: '#b0b4b7', height: '100%'}}>
+        <Col sm={3} style={{ height: '100%'}}>
         </Col>
-        <Col sm={3} style={{ backgroundColor: '#9ca1a6', height: '100%'}}>
+        <Col sm={3} style={{ height: '100%'}}>
         </Col>
       </Row>
     )
