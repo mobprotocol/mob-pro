@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-bootstrap'
 
+import TokenA from './TokenA'
+import TokenB from './TokenB'
+
 const headerStyle = {
   height: 90,
   color: '#29353d'
@@ -16,8 +19,10 @@ export default class Header extends Component {
           </h3>
         </Col>
         <Col sm={3} style={{ height: '100%'}}>
+          <TokenA />
         </Col>
         <Col sm={3} style={{ height: '100%'}}>
+          <TokenB />
         </Col>
       </Row>
     )
