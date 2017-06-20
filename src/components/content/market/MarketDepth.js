@@ -22,7 +22,7 @@ const data = [
 export default class MarketDepth extends Component {
   render() {
     return (
-      <ResponsiveContainer width='100%' height='50%'>
+      <ResponsiveContainer width='100%' height='65%'>
         <BarChart data={data}>
           <XAxis dataKey="name" />
           <YAxis />

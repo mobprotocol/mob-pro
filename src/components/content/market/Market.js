@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PriceHistory from './PriceHistory'
 import MarketDepth from './MarketDepth'
 import Volume from './Volume'
+import CurrentOrders from './CurrentOrders'
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 const marketSyle = {
@@ -26,10 +27,12 @@ export default class Market extends Component {
             </div>
           </div>
           <div>
+            <Route path="/" component={PriceHistory} />
             <Route path="/price" component={PriceHistory} />
             <Route path="/volume" component={Volume} />
             <Route path="/depth" component={MarketDepth} />
           </div>
+          <CurrentOrders />
         </div>
       </Router>
     )
