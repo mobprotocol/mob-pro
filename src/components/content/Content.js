@@ -7,7 +7,6 @@ import Market from './market/Market'
 
 const contentStyle = {
   height: '100%',
-  paddingRight: '-10'
 }
 
 const orderBookStyle = {

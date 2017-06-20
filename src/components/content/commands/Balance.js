@@ -4,7 +4,6 @@ import { Row } from 'react-bootstrap'
 const balanceStyle = {
   backgroundColor: '#b0b4b7',
   height: '50%',
-  paddingLeft: 50
 }
 export default class Balance extends Component {
   constructor() {
@@ -22,25 +21,29 @@ export default class Balance extends Component {
       <Row style={balanceStyle}>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h2>{this.state.tokenA}</h2>
+            <h1>{this.state.tokenA}</h1>
           </div>
-          <div style={{ width: '50%', display: 'inline', float: 'left'}}>
-            <h2>{this.state.tokenAamount}</h2>
+          <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center'}}>
+            <h1>{this.state.tokenAamount}</h1>
           </div>
         </div>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }} >
-            <h2>{this.state.tokenB}</h2>
+            <h1>{this.state.tokenB}</h1>
           </div>
-          <div style={{ width: '50%', display: 'inline', float: 'left' }}>
-            <h2>{this.state.tokenBamount}</h2>
+          <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
+            <h1>{this.state.tokenBamount}</h1>
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <h2>Deposit</h2>
+          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%'}}>
+            <h2>Deposit</h2>
+          </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <h2>Withdraw</h2>
+          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%'}}>
+            <h2>Withdraw</h2>
+          </div>
         </div>
       </Row>
     )
