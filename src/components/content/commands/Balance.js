@@ -22,25 +22,25 @@ export default class Balance extends Component {
       <Row style={balanceStyle}>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>{this.state.tokenA}</h3>
+            <h2>{this.state.tokenA}</h2>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left'}}>
-            <h3>{this.state.tokenAamount}</h3>
+            <h2>{this.state.tokenAamount}</h2>
           </div>
         </div>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }} >
-            <h3>{this.state.tokenB}</h3>
+            <h2>{this.state.tokenB}</h2>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left' }}>
-            <h3>{this.state.tokenBamount}</h3>
+            <h2>{this.state.tokenBamount}</h2>
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <h3>Deposit</h3>
+          <h2>Deposit</h2>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <h3>Withdraw</h3>
+          <h2>Withdraw</h2>
         </div>
       </Row>
     )

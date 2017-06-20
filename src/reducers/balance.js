@@ -5,5 +5,9 @@ export default function balance(state = {}, action) {
         ...state,
         [action.asset]: action.data
       }
+      break
+    default:
+      return state
+      break
   }
 }
