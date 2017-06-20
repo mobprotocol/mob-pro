@@ -14,7 +14,7 @@ import { data } from './PriceHistoryData'
 export default class PriceHistory extends Component {
   render() {
     return (
-      <ResponsiveContainer width='100%' height='55%'>
+      <ResponsiveContainer width='100%' height='65%'>
         <LineChart data={data}>
             <XAxis dataKey="name" />
             <YAxis />

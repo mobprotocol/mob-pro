@@ -22,8 +22,9 @@ export default class Market extends Component {
             <h2>Volume</h2>
           </div>
         </div>
-        <PriceHistory />
-        <MarketDepth />
+        <div>
+          <PriceHistory />
+        </div>
       </div>
     )
   }
