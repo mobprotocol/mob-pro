@@ -35,10 +35,10 @@ export default class Trade extends Component {
       */}
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>Price</h3>
+            <h1>Price</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center'}}>
-            <h3>{this.state.marketPrice}</h3>
+            <h1>{this.state.marketPrice}</h1>
           </div>
         </div>
         <div style={{ height: '25%' }}>
@@ -52,18 +52,18 @@ export default class Trade extends Component {
         </div>
         <div style={{ height: '25%' }}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>Send</h3>
+            <h1>Send</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>{this.state.sendAmount}</h3>
+            <h1>{this.state.sendAmount}</h1>
           </div>
         </div>
         <div style={{ height: '25%' }}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>Receive</h3>
+            <h1>Receive</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h3>{this.state.receiveAmount}</h3>
+            <h1>{this.state.receiveAmount}</h1>
           </div>
         </div>
       </Row>

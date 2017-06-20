@@ -9,7 +9,7 @@ const sellBStyle = {
 export default class SellB extends Component {
   render() {
     return (
-      <div style={{ height: '50%', paddingTop: 15}}>
+      <div style={{ height: '50%', paddingTop: 15, overflow: 'scroll'}}>
         <Table style={sellBStyle}>
           <thead>
             <tr>
