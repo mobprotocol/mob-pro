@@ -3,7 +3,8 @@ import WS from 'simple-websocket'
 
 export default class Socket {
   constructor() {
-    this.socket
+    console.log('Socket class instantiated')
+    this.dataChannel()
   }
 
   dataChannel() {
