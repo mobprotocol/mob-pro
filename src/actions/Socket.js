@@ -1,5 +1,5 @@
 import Promise from 'bluebird'
-import Socket from 'simple-websocket'
+import WS from 'simple-websocket'
 
 export default class Socket {
   constructor() {
@@ -7,7 +7,7 @@ export default class Socket {
   }
 
   dataChannel() {
-    this.socket = new Socket('ws://localhost:3001')
+    this.socket = new WS('ws://localhost:3001')
     this.socket.on('data', (data) => {
       console.log('### Received data from server', data)
     })

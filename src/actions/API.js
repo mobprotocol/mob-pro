@@ -1,6 +1,6 @@
 import Promise from 'bluebird'
 
-export default Class API {
+export default class API {
   constructor() {
     console.log('instantiated API class')
   }
@@ -11,6 +11,7 @@ export default Class API {
       //   return Promise.delay(0)
       //   .then(())
       // })
+
       console.log('hit dispatch')
     }
   }
