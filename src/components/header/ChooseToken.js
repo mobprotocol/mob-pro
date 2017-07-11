@@ -2,9 +2,11 @@ import React, { Component } from 'react'
 import {
   Modal,
 } from 'react-bootstrap'
+import { connect } from 'react-redux'
+
 import tokens from './tokens.json'
 
-export default class ChooseToken extends Component {
+class ChooseToken extends Component {
   constructor() {
     super()
   }
@@ -17,7 +19,6 @@ export default class ChooseToken extends Component {
 
   tokens() {
     return Object.keys(tokens).map((token) => {
-      console.log('token.ticker', token.ticker)
       const source = `./src/imgs/${tokens[token].ticker}_logo.png`
       return (
         <div
@@ -49,3 +50,9 @@ export default class ChooseToken extends Component {
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  return store.token
+}
+
+export default connect(mapStoreToProps)(ChooseToken)
