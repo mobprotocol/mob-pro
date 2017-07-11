@@ -75,7 +75,6 @@ class Header extends Component {
 }
 
 const mapStoreToProps = (store) => {
-  console.log('store', store)
   return store.token
 }
 

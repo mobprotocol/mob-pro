@@ -36,7 +36,7 @@ export default class Balance extends Component {
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%'}}>
+          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%' }}>
             <h2>Deposit</h2>
           </div>
         </div>

@@ -1,12 +1,13 @@
 const INITIAL_STATE = {
   tokenA: 'MOB',
-  tokenB: 'BAT'
+  tokenB: 'BAT',
   type: 'A'
 }
 
 export default function token(state = INITIAL_STATE, action) {
   switch(action.type) {
     case 'CHANGE_TOKEN_A':
+      console.log('change token a', action.data)
       return {
         ...state,
         tokenA: action.data

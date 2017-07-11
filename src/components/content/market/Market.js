@@ -27,7 +27,6 @@ export default class Market extends Component {
             </div>
           </div>
           <div>
-            <Route path="/" component={PriceHistory} />
             <Route path="/price" component={PriceHistory} />
             <Route path="/volume" component={Volume} />
             <Route path="/depth" component={MarketDepth} />

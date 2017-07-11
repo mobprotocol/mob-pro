@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 class TokenB extends Component {
   render() {
-    console.log('this.props', this.props.tokenB)
     const source = `./src/imgs/${this.props.tokenB}_logo.png`
     return (
       <h3>

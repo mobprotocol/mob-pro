@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { Row, Col } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
 import Commands from './commands/Commands'
 import OrderBook from './orderbook/Orderbook'
 import Market from './market/Market'
+import { Socket } from '../../actions/index'
 
 const contentStyle = {
   height: '100%',
@@ -16,7 +18,15 @@ const orderBookStyle = {
   width: '100%'
 }
 
-export default class Content extends Component {
+class Content extends Component {
+  constructor() {
+    super()
+  }
+
+  componentDidMount() {
+    console.log('this.props', this.props)
+  }
+
   render() {
     return (
       <Row style={contentStyle}>
@@ -33,3 +43,9 @@ export default class Content extends Component {
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  return ({})
+}
+
+export default connect(mapStoreToProps)(Content)

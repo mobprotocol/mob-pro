@@ -14,7 +14,10 @@ class ChooseToken extends Component {
   handleClick(ticker) {
     // dispatch token change
     // close out modal
-    this.props.dispatch({ type: 'UPDATE_TOKEN_A', data: ticker })
+    console.log('this.props', this.props)
+    console.log('this.props.token.type', this.props.type)
+    console.log('dispatching token change', ticker)
+    this.props.dispatch({ type: `CHANGE_TOKEN_${this.props.type}`, data: ticker })
   }
 
   tokens() {
@@ -53,6 +56,7 @@ class ChooseToken extends Component {
 }
 
 const mapStoreToProps = (store) => {
+  console.log('store', store)
   return store.token
 }
 
