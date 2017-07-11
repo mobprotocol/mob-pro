@@ -16,6 +16,11 @@ const colStyle = {
   alignItems: 'center'
 }
 export default class Header extends Component {
+
+  handleClick(e) {
+    console.log('clicked token!!!')
+  }
+
   render() {
     return (
       <Row style={headerStyle}>
@@ -25,10 +30,10 @@ export default class Header extends Component {
             MOB PRO
           </h3>
         </Col>
-        <Col sm={3} style={ colStyle }>
+        <Col sm={3} style={ colStyle } onClick={(e) => { this.handleClick() }}>
           <TokenA />
         </Col>
-        <Col sm={3} style={ colStyle }>
+        <Col sm={3} style={ colStyle } onClick={(e) => { this.handleClick() }}>
           <TokenB />
         </Col>
         <Col sm={3} style={ colStyle, { height: '100%'}}>
