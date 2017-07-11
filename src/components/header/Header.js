@@ -20,15 +20,15 @@ export default class Header extends Component {
     return (
       <Row style={headerStyle}>
         <Col sm={3} style={ colStyle }>
-          <h3 style={{ float: 'left'}}>
+          <h3>
             <img src='./src/imgs/mob_logo.png' style={{ paddingRight: 10, paddingLeft: 10 }} />
             MOB PRO
           </h3>
         </Col>
-        <Col sm={3} style={ colStyle, { height: '100%'}}>
+        <Col sm={3} style={ colStyle }>
           <TokenA />
         </Col>
-        <Col sm={3} style={ colStyle, { height: '100%'}}>
+        <Col sm={3} style={ colStyle }>
           <TokenB />
         </Col>
         <Col sm={3} style={ colStyle, { height: '100%'}}>
