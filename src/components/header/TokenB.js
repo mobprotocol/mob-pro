@@ -1,12 +1,21 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 
-export default class TokenB extends Component {
+class TokenB extends Component {
   render() {
+    console.log('this.props', this.props.tokenB)
+    const source = `./src/imgs/${this.props.tokenB}_logo.png`
     return (
       <h3>
-        <img src='./src/imgs/ethereum_logo.png' style={{ paddingRight: 10, paddingLeft: 10 }} />
-        ETH
+        <img src={source} style={{ paddingRight: 10, paddingLeft: 10 }} />
+        {this.props.tokenB}
       </h3>
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  return store.token
+}
+
+export default connect(mapStoreToProps)(TokenB)
