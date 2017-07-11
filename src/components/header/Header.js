@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Row, Col, Modal } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
 import TokenA from './TokenA'
 import TokenB from './TokenB'
@@ -18,7 +19,7 @@ const colStyle = {
   height: '100%'
 }
 
-export default class Header extends Component {
+class Header extends Component {
   constructor() {
     super()
     this.state = {
@@ -27,7 +28,6 @@ export default class Header extends Component {
   }
 
   handleClick(e) {
-    console.log('clicked token!!!')
     this.setState({ show: !this.state.show })
   }
 
@@ -49,12 +49,22 @@ export default class Header extends Component {
         <Col sm={3} style={ colStyle, { height: '100%'}}>
           <Notifications />
         </Col>
-        <Modal show={this.state.show}>
+        <Modal show={this.state.show} style={{ maxHeight: 400, fontFamily: 'roboto' }}>
           <Modal.Header>
-            Choose Token
+            <h3>CHOOSE TOKEN</h3>
           </Modal.Header>
+          <Modal.Body>
+            <ChooseToken />
+          </Modal.Body>
         </Modal>
       </Row>
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  console.log('store', store)
+  return store.token
+}
+
+export default connect(mapStoreToProps)(Header)
