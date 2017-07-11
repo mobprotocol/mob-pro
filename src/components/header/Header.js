@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap'
 import TokenA from './TokenA'
 import TokenB from './TokenB'
 import Notifications from './Notifications'
+import ChooseToken from './ChooseToken'
 
 const headerStyle = {
   height: 90,
@@ -13,12 +14,15 @@ const headerStyle = {
 const colStyle = {
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center'
+  alignItems: 'center',
+  height: '100%'
 }
+
 export default class Header extends Component {
 
   handleClick(e) {
     console.log('clicked token!!!')
+
   }
 
   render() {
