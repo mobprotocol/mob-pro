@@ -51,7 +51,16 @@ class Header extends Component {
         </Col>
         <Modal show={this.state.show} style={{ maxHeight: 400, fontFamily: 'roboto' }}>
           <Modal.Header>
-            <h3>CHOOSE TOKEN</h3>
+            <div style={{ display: 'flex', flexDirection: 'row'}}>
+              <h3>CHOOSE TOKEN</h3>
+              <div stle={{ width: '100%'}}>
+                <img
+                  src='./src/imgs/x.png'
+                  style={{ position: 'absolute', right: 10, top: 10 }}
+                  onClick={(e) => { this.handleClick() }}
+                  />
+              </div>
+            </div>
           </Modal.Header>
           <Modal.Body>
             <ChooseToken />
