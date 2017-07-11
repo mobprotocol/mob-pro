@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col, Modal } from 'react-bootstrap'
 
 import TokenA from './TokenA'
 import TokenB from './TokenB'
@@ -20,7 +20,7 @@ const colStyle = {
 
 export default class Header extends Component {
   constructor() {
-    suepr()
+    super()
     this.state = {
       show: false
     }
@@ -49,10 +49,12 @@ export default class Header extends Component {
         <Col sm={3} style={ colStyle, { height: '100%'}}>
           <Notifications />
         </Col>
+        <Modal show={this.state.show}>
+          <Modal.Header>
+            Choose Token
+          </Modal.Header>
+        </Modal>
       </Row>
-      <Modal show={this.state.showModal}>
-      
-      </Modal>
     )
   }
 }
