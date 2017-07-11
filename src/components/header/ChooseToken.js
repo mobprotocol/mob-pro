@@ -13,8 +13,11 @@ export default class ChooseToken extends Component {
     console.log('tokens', tokens)
     return Object.keys(tokens).map((token) => {
       return (
-        <div style={{ width: 150, height: 75, backgroundColor: 'grey', margin: 10 }}>
-          token A
+        <div style={{ width: 150, height: 75, boxShadow: '2px 2px 2px 2px #F5F5F5', margin: 5, borderRadius: 5 }}>
+          <h3>
+            <img src='./src/imgs/brave_logo.png' style={{ paddingRight: 10, paddingLeft: 10 }} />
+            BAT
+          </h3>
         </div>
       )
     })
