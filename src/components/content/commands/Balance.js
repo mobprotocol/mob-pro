@@ -5,7 +5,8 @@ import { connect } from 'react-redux'
 const balanceStyle = {
   backgroundColor: '#b0b4b7',
   height: '50%',
-  fontWeight: 100
+  fontWeight: 100,
+  marginLeft: 0
 }
 
 class Balance extends Component {

@@ -7,7 +7,7 @@ import Slider from 'react-rangeslider'
 const tradeStyle = {
   height: '50%',
   backgroundColor: '#9ca1a6',
-  marginLeft: 0 
+  marginLeft: 0
 }
 export default class Trade extends Component {
   constructor() {
@@ -16,7 +16,8 @@ export default class Trade extends Component {
       marketPrice: '1.450000',
       quantity: 10,
       sendAmount: '30',
-      receiveAmount: '45'
+      receiveAmount: '45',
+      marginBottom: 0
     }
   }
 
@@ -65,6 +66,11 @@ export default class Trade extends Component {
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
             <h1 style={{ fontWeight: 100 }}>{this.state.receiveAmount}</h1>
+          </div>
+        </div>
+        <div style={{ height: '20%' }}>
+          <div style={{ height: '85%', width: '75%', backgroundColor: '#3a444d', margin: 'auto', borderRadius: 7, color: 'white', textAlign: 'center' }}>
+            <h1>TRADE</h1>
           </div>
         </div>
       </Row>
