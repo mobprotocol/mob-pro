@@ -13,7 +13,7 @@ export default class ChooseToken extends Component {
     console.log('tokens', tokens)
     return Object.keys(tokens).map((token) => {
       return (
-        <div style={{ width: 150, height: 75}}>
+        <div style={{ width: 150, height: 75, backgroundColor: 'grey', margin: 10 }}>
           token A
         </div>
       )
@@ -22,7 +22,7 @@ export default class ChooseToken extends Component {
 
   render() {
     return (
-      <div>
+      <div style={{ width: '100%', height: '100%', display: 'flex', flexWrap: 'wrap' }}>
         {this.tokens()}
       </div>
     )
