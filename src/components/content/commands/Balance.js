@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { Row } from 'react-bootstrap'
+import { connect } from 'react-redux'
 
 const balanceStyle = {
   backgroundColor: '#b0b4b7',
   height: '50%',
 }
-export default class Balance extends Component {
+
+class Balance extends Component {
   constructor() {
     super()
     this.state = {
@@ -49,3 +51,9 @@ export default class Balance extends Component {
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  return store.tokens
+}
+
+export default connect(mapStoreToProps)(Balance)
