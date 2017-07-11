@@ -9,9 +9,10 @@ export default class ChooseToken extends Component {
     super()
   }
 
-  handleClick() {
+  handleClick(ticker) {
     // dispatch token change
     // close out modal
+    this.props.dispatch({ type: 'UPDATE_TOKEN_A', data: ticker })
   }
 
   tokens() {
@@ -19,7 +20,9 @@ export default class ChooseToken extends Component {
       console.log('token.ticker', token.ticker)
       const source = `./src/imgs/${tokens[token].ticker}_logo.png`
       return (
-        <div style={{
+        <div
+          onClick={(e) => { this.handleClick(tokens[token].ticker) }}
+          style={{
           width: 150,
           height: 75,
           boxShadow: '2px 2px 2px 2px #F5F5F5',
