@@ -27,7 +27,10 @@ class Header extends Component {
     }
   }
 
-  handleClick(e) {
+  handleClick(type) {
+    if(type) {
+      this.props.dispatch({ type: 'CHANGE_TOKEN_TYPE', data: type })
+    }
     this.setState({ show: !this.state.show })
   }
 
@@ -40,10 +43,10 @@ class Header extends Component {
             MOB PRO
           </h3>
         </Col>
-        <Col sm={3} style={ colStyle } onClick={(e) => { this.handleClick() }}>
+        <Col sm={3} style={ colStyle } onClick={() => { this.handleClick('A') }}>
           <TokenA />
         </Col>
-        <Col sm={3} style={ colStyle } onClick={(e) => { this.handleClick() }}>
+        <Col sm={3} style={ colStyle } onClick={() => { this.handleClick('B') }}>
           <TokenB />
         </Col>
         <Col sm={3} style={ colStyle, { height: '100%'}}>
@@ -53,7 +56,7 @@ class Header extends Component {
           <Modal.Header>
             <div style={{ display: 'flex', flexDirection: 'row'}}>
               <h3>CHOOSE TOKEN</h3>
-              <div stle={{ width: '100%'}}>
+              <div>
                 <img
                   src='./src/imgs/x.png'
                   style={{ position: 'absolute', right: 10, top: 10 }}

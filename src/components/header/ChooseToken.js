@@ -18,10 +18,11 @@ class ChooseToken extends Component {
   }
 
   tokens() {
-    return Object.keys(tokens).map((token) => {
+    return Object.keys(tokens).map((token, i) => {
       const source = `./src/imgs/${tokens[token].ticker}_logo.png`
       return (
         <div
+          key={i}
           onClick={(e) => { this.handleClick(tokens[token].ticker) }}
           style={{
           width: 150,
