@@ -19,10 +19,16 @@ const colStyle = {
 }
 
 export default class Header extends Component {
+  constructor() {
+    suepr()
+    this.state = {
+      show: false
+    }
+  }
 
   handleClick(e) {
     console.log('clicked token!!!')
-
+    this.setState({ show: !this.state.show })
   }
 
   render() {
@@ -44,6 +50,9 @@ export default class Header extends Component {
           <Notifications />
         </Col>
       </Row>
+      <Modal show={this.state.showModal}>
+      
+      </Modal>
     )
   }
 }
