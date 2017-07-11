@@ -9,23 +9,29 @@ const headerStyle = {
   height: 90,
   color: '#29353d'
 }
+
+const colStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+}
 export default class Header extends Component {
   render() {
     return (
       <Row style={headerStyle}>
-        <Col sm={3}>
+        <Col sm={3} style={ colStyle }>
           <h3 style={{ float: 'left'}}>
             <img src='./src/imgs/mob_logo.png' style={{ paddingRight: 10, paddingLeft: 10 }} />
             MOB PRO
           </h3>
         </Col>
-        <Col sm={3} style={{ height: '100%'}}>
+        <Col sm={3} style={ colStyle, { height: '100%'}}>
           <TokenA />
         </Col>
-        <Col sm={3} style={{ height: '100%'}}>
+        <Col sm={3} style={ colStyle, { height: '100%'}}>
           <TokenB />
         </Col>
-        <Col sm={3} style={{ height: '100%'}}>
+        <Col sm={3} style={ colStyle, { height: '100%'}}>
           <Notifications />
         </Col>
       </Row>
