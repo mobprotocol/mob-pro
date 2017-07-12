@@ -7,7 +7,8 @@ import Slider from 'react-rangeslider'
 const tradeStyle = {
   height: '50%',
   backgroundColor: '#9ca1a6',
-  marginLeft: 0
+  marginLeft: 0,
+  marginBottom: 10
 }
 export default class Trade extends Component {
   constructor() {
@@ -17,7 +18,7 @@ export default class Trade extends Component {
       quantity: 10,
       sendAmount: '30',
       receiveAmount: '45',
-      marginBottom: 0
+      margin: 0
     }
   }
 
@@ -28,13 +29,6 @@ export default class Trade extends Component {
   render() {
     return (
       <Row style={tradeStyle}>
-      {/**
-        <div style={{ height: '40', display: 'inline'}}>
-          <div style={{ width: '33%', float: 'left' }}>L</div>
-          <div style={{ width: '33%', float: 'left' }}></div>
-          <div style={{ width: '33%', float: 'left' }}></div>
-        </div>
-      */}
         <div style={{ height: '20%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
             <h1 style={{ fontWeight: 100 }}>Price</h1>
@@ -54,23 +48,23 @@ export default class Trade extends Component {
         </div>
         <div style={{ height: '20%' }}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100 }}>Send</h1>
+            <h1 style={{ fontWeight: 300 }}>Send</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100 }}>{this.state.sendAmount}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.state.sendAmount}</h1>
           </div>
         </div>
         <div style={{ height: '20%' }}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100 }}>Receive</h1>
+            <h1 style={{ fontWeight: 300 }}>Receive</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100 }}>{this.state.receiveAmount}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.state.receiveAmount}</h1>
           </div>
         </div>
-        <div style={{ height: '20%' }}>
+        <div style={{ height: '20%', backgroundColor: '#9ca1a6' }}>
           <div style={{ height: '85%', width: '75%', backgroundColor: '#3a444d', margin: 'auto', borderRadius: 7, color: 'white', textAlign: 'center' }}>
-            <h1>TRADE</h1>
+            <h3>TRADE</h3>
           </div>
         </div>
       </Row>

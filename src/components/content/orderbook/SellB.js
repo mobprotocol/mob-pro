@@ -77,7 +77,7 @@ export default class SellB extends Component {
   }
   render() {
     return (
-      <div style={{ height: '50%', paddingTop: 15, overflow: 'scroll'}}>
+      <div style={{ height: '50%', paddingTop: 15, overflow: 'scroll', paddingBottom: 10}}>
         <Table style={sellBStyle}>
           <thead>
             <tr>

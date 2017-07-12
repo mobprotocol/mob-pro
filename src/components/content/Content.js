@@ -9,6 +9,7 @@ import { Socket } from '../../actions/index'
 
 const contentStyle = {
   height: '100%',
+  margin: 0
 }
 
 const orderBookStyle = {
@@ -25,18 +26,19 @@ class Content extends Component {
 
   componentDidMount() {
     console.log('this.props', this.props)
+    // this.props.dispatch(Socket.)
   }
 
   render() {
     return (
       <Row style={contentStyle}>
-        <Col sm={3} style={{ height: '100%'}}>
+        <Col sm={2} style={{ height: '100%'}}>
           <Commands />
         </Col>
-        <Col sm={3} style={{ backgroundColor: '#29353d'}}>
+        <Col sm={2} style={{ backgroundColor: '#29353d'}}>
           <OrderBook />
         </Col>
-        <Col sm={6} style={{ backgroundColor: '#3a444d', height: '100%'}}>
+        <Col sm={8} style={{ backgroundColor: '#3a444d', height: '100%'}}>
           <Market />
         </Col>
       </Row>

@@ -8,7 +8,7 @@ import Notifications from './Notifications'
 import ChooseToken from './ChooseToken'
 
 const headerStyle = {
-  height: 90,
+  height: 80,
   color: '#29353d'
 }
 
@@ -37,12 +37,6 @@ class Header extends Component {
   render() {
     return (
       <Row style={headerStyle}>
-        <Col sm={3} style={ colStyle }>
-          <h3>
-            <img src='./src/imgs/mob_logo.png' style={{ paddingRight: 10, paddingLeft: 10 }} />
-            MOB PRO
-          </h3>
-        </Col>
         <Col sm={3} style={ colStyle } onClick={() => { this.handleClick('A') }}>
           <TokenA />
         </Col>

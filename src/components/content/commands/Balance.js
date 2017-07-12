@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 const balanceStyle = {
   backgroundColor: '#b0b4b7',
   height: '50%',
-  fontWeight: 100,
+  fontWeight: 300,
   marginLeft: 0
 }
 
@@ -27,28 +27,28 @@ class Balance extends Component {
       <Row style={balanceStyle}>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100}}>{this.props.tokenA}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.props.tokenA}</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center'}}>
-            <h1 style={{ fontWeight: 100 }}>{this.state.tokenAamount}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.state.tokenAamount}</h1>
           </div>
         </div>
         <div style={{ height: '25%'}}>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }} >
-            <h1 style={{ fontWeight: 100 }}>{this.props.tokenB}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.props.tokenB}</h1>
           </div>
           <div style={{ width: '50%', display: 'inline', float: 'left', textAlign: 'center' }}>
-            <h1 style={{ fontWeight: 100 }}>{this.state.tokenBamount}</h1>
+            <h1 style={{ fontWeight: 300 }}>{this.state.tokenBamount}</h1>
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
           <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', borderRadius: 7 }}>
-            <h2>Deposit</h2>
+            <h3 style={{ fontWeight: 300 }}>DEPOSIT</h3>
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
           <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', borderRadius: 7}}>
-            <h2>Withdraw</h2>
+            <h3 style={{ fontWeight: 300 }}>WITHDRAW</h3>
           </div>
         </div>
       </Row>
