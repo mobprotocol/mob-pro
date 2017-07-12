@@ -4,9 +4,8 @@ import { connect } from 'react-redux'
 
 const balanceStyle = {
   backgroundColor: '#b0b4b7',
-  height: '50%',
+  height: '40%',
   fontWeight: 300,
-  marginLeft: 0
 }
 
 class Balance extends Component {
@@ -42,12 +41,12 @@ class Balance extends Component {
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', borderRadius: 7 }}>
+          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', height: '90%', borderRadius: 7 }}>
             <h3 style={{ fontWeight: 300 }}>DEPOSIT</h3>
           </div>
         </div>
         <div style={{ height: '25%', textAlign: 'center' }}>
-          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', borderRadius: 7}}>
+          <div style={{ backgroundColor: '#3a444d', color: '#FFF', display: 'inline-block', width: '75%', height: '90%', borderRadius: 7}}>
             <h3 style={{ fontWeight: 300 }}>WITHDRAW</h3>
           </div>
         </div>

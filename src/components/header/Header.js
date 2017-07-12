@@ -8,7 +8,7 @@ import Notifications from './Notifications'
 import ChooseToken from './ChooseToken'
 
 const headerStyle = {
-  height: 80,
+  height: 70,
   color: '#29353d'
 }
 
@@ -37,14 +37,11 @@ class Header extends Component {
   render() {
     return (
       <Row style={headerStyle}>
-        <Col sm={3} style={ colStyle } onClick={() => { this.handleClick('A') }}>
+        <Col sm={2} style={ colStyle } onClick={() => { this.handleClick('A') }}>
           <TokenA />
         </Col>
-        <Col sm={3} style={ colStyle } onClick={() => { this.handleClick('B') }}>
+        <Col sm={2} style={ colStyle } onClick={() => { this.handleClick('A') }}>
           <TokenB />
-        </Col>
-        <Col sm={3} style={ colStyle, { height: '100%'}}>
-          <Notifications />
         </Col>
         <Modal show={this.state.show} style={{ maxHeight: 400, fontFamily: 'roboto' }}>
           <Modal.Header>

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import { connect } from 'react-redux'
-
+import { Grid, Row } from 'react-bootstrap'
 import { Socket } from '../actions/index'
 import Header from './header/Header'
 import Content from './content/Content'
