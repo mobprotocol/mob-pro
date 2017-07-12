@@ -29,6 +29,7 @@
     "redux-thunk": "^2.2.0",
     "simple-websocket": "^5.0.2",
     "style-loader": "^0.18.2",
+    "victory": "^0.21.1",
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   }
