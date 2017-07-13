@@ -27,7 +27,11 @@ export default class Main extends Component {
               <h3 style={{ fontWeight: 300 }}>GO DOWNLOAD METAMASK</h3>
             </Modal.Header>
             <Modal.Body>
-              <img src="./src/imgs/metamask_logo.png" />
+              <a  href="https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en">
+                <div style={{ boxShadow: '5px 5px 5px 5px #F5F5F5', margin: 'auto', margin: 15, borderRadius: 5 }}>
+                  <img src="./src/imgs/metamask_logo.png" />
+                </div>
+              </a>
             </Modal.Body>
           </Modal>
         </div>
