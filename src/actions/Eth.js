@@ -1,6 +1,6 @@
 import web3 from 'web3'
 
-export default Class Eth {
+export default class Eth {
   constructor() {
     this.web3
   }
