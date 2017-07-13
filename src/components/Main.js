@@ -22,12 +22,12 @@ export default class Main extends Component {
             <Header />
             <Content />
           </div>
-          <Modal show={this.state.show} style={{ maxHeight: 400, fontFamily: 'roboto' }}>
+          <Modal show={this.state.show} style={{ maxHeight: 800, fontFamily: 'roboto', textAlign: 'center' }}>
             <Modal.Header>
               <h3 style={{ fontWeight: 300 }}>GO DOWNLOAD METAMASK</h3>
             </Modal.Header>
             <Modal.Body>
-              
+              <img src="./src/imgs/metamask_logo.png" />
             </Modal.Body>
           </Modal>
         </div>
