@@ -1,5 +1,3 @@
-import web3 from 'web3'
-
 export default class Eth {
   constructor() {
     this.web3
@@ -9,6 +7,7 @@ export default class Eth {
     return (dispatch) => {
       window.addEventListener('load', () => {
         if (typeof web3 !== 'undefined') {
+          console.log('web3', web3)
           this.web3 = new Web3(web3.currentProvider)
           dispatch({ type: 'METAMASK_STATUS', status: true })
         } else {

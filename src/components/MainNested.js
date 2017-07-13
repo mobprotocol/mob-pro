@@ -6,7 +6,7 @@ import {
 
 import Header from './header/Header'
 import Content from './content/Content'
-import Eth from '../actions/Eth'
+import { Eth } from '../actions/index'
 
 class MainNested extends Component {
   constructor() {
@@ -27,7 +27,7 @@ class MainNested extends Component {
           <Header />
           <Content />
         </div>
-        <Modal show={this.state.show} style={{ maxHeight: 800, fontFamily: 'roboto', textAlign: 'center' }}>
+        <Modal show={!this.props.metamask} style={{ maxHeight: 800, fontFamily: 'roboto', textAlign: 'center' }}>
           <Modal.Header>
             <h3 style={{ fontWeight: 300 }}>GO DOWNLOAD METAMASK</h3>
           </Modal.Header>
