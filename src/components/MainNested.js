@@ -1,8 +1,23 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
+import {
+  Modal
+} from 'react-bootstrap'
+
+import Header from './header/Header'
+import Content from './content/Content'
+import Eth from '../actions/Eth'
 
 class MainNested extends Component {
   constructor() {
     super()
+    this.state = {
+      show: true
+    }
+  }
+
+  componentDidMount() {
+    this.props.dispatch(Eth.getWeb3Provider())
   }
 
   render() {
