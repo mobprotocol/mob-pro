@@ -1,6 +1,6 @@
 import web3 from 'web3'
 
-export default Class Web3Interface {
+export default Class Eth {
   constructor() {
     this.web3 = getWeb3Provider()
   }
