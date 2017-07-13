@@ -2,18 +2,21 @@ import web3 from 'web3'
 
 export default Class Eth {
   constructor() {
-    this.web3 = getWeb3Provider()
+    this.web3
   }
 
   getWeb3Provider() {
-    window.addEventListener('load', () => {
-      if (typeof web3 !== 'undefined') {
-        this.web3 = new Web3(web3.currentProvider)
-      } else {
-        // dispatch({type:})
-        console.log('nooo, metamask, ...')
-      }
-    })
+    return (dispatch) => {
+      window.addEventListener('load', () => {
+        if (typeof web3 !== 'undefined') {
+          this.web3 = new Web3(web3.currentProvider)
+          dispatch({ type: 'METAMASK_STATUS', status: true })
+        } else {
+          // dispatch({type:})
+          dispatch({ type: 'METAMASK_STATUS', status: false })
+        }
+      })
+    }
   }
 
   transferTokens() {
