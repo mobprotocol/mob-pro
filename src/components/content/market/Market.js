@@ -15,7 +15,7 @@ export default class Market extends Component {
     return (
       <Router>
         <div style={marketSyle}>
-          <div style={{ height: 60, backgroundColor: '#9ca1a6', width: '100%' }}>
+          <div style={{ height: 70, backgroundColor: '#9ca1a6', width: '100%' }}>
             <div style={{ width: '33%', display: 'inline', float: 'left', textAlign: 'center' }}>
               <Link to='/price'><h2>Price</h2></Link>
             </div>
@@ -26,7 +26,7 @@ export default class Market extends Component {
               <Link to='/depth'><h2>Volume</h2></Link>
             </div>
           </div>
-          <div>
+          <div style={{ height: '75%', width: '100%' }}>
             <Route path="/price" component={PriceHistory} />
             <Route path="/volume" component={Volume} />
             <Route path="/depth" component={MarketDepth} />

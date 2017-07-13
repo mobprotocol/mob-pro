@@ -38,7 +38,7 @@ class Content extends Component {
         <Col sm={2} style={{ backgroundColor: '#29353d'}}>
           <OrderBook />
         </Col>
-        <Col sm={8} style={{ backgroundColor: '#3a444d', height: '100%'}}>
+        <Col sm={8} style={{ backgroundColor: '#3a444d', height: '100%', paddingLeft: 0, paddingRight: 0 }}>
           <Market />
         </Col>
       </Row>

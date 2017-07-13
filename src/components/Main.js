@@ -2,12 +2,14 @@ import React, { Component } from 'react'
 import { Provider } from 'react-redux'
 import { connect } from 'react-redux'
 import { Grid, Row, Modal } from 'react-bootstrap'
+import { connect } from 'react-redux'
+
 import { Socket } from '../actions/index'
 import Header from './header/Header'
 import Content from './content/Content'
 import store from '../store'
 
-export default class Main extends Component {
+class Main extends Component {
   constructor() {
     super()
     this.state = {
@@ -39,3 +41,9 @@ export default class Main extends Component {
     )
   }
 }
+
+const mapStoreToProps = (store) => {
+  return store.eth
+}
+
+export default connect(mapStoreToProps)(Main)
